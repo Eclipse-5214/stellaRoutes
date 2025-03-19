@@ -24,15 +24,13 @@
 
 ## **Automatic**
 1. Download Chattriggers.  
-2. /ct import stella.  
+2. /ct import stellaRoutes.  
 3. Have fun!
 
 ## **Manual**
 1. Download Chattrigers
-2. Download latest release from [here](https://github.com/Eclipse-5214/stella/releases)
+2. Download latest release from [here](https://github.com/Eclipse-5214/stellaRoutes/releases)
 3. /ct files
 4. unzip in folder
 5. /ct reload
 6. Have fun!
-   
----
