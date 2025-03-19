@@ -1,0 +1,8 @@
+{
+    "name": "stellaRoutes",
+    "creator": "NEXD_",
+    "description": "secret routes addon for stella",
+    "version": "1.0.0",
+    "entry": "index.js",
+    "requires": ["stella", "Amaterasu", "BloomCore", "roomsAPI", "tska"]
+}
