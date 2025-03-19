@@ -1,0 +1,194 @@
+[
+    {
+        "category": "General",
+        "settings": [
+            {
+                "type": 9,
+                "name": "Info"
+            },
+            {
+                "type": 2,
+                "name": "MyDiscord"
+            },
+            {
+                "type": 2,
+                "name": "MyGithub"
+            }
+        ]
+    },
+    {
+        "category": "Routes",
+        "settings": [
+            {
+                "type": 6,
+                "name": "modEnabled",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "boxSecrets",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "showText",
+                "value": true
+            },
+            {
+                "type": 10,
+                "name": "nextStep",
+                "value": 27
+            },
+            {
+                "type": 10,
+                "name": "lastStep",
+                "value": 26
+            },
+            {
+                "type": 10,
+                "name": "resetStep",
+                "value": 43
+            },
+            {
+                "type": 7,
+                "name": "lineType",
+                "value": 2
+            },
+            {
+                "type": 1,
+                "name": "lineWidth",
+                "value": 2
+            },
+            {
+                "type": 5,
+                "name": "lineColor",
+                "value": [
+                    255,
+                    0,
+                    0,
+                    255
+                ]
+            },
+            {
+                "type": 5,
+                "name": "warpColor",
+                "value": [
+                    0,
+                    0,
+                    255,
+                    255
+                ]
+            },
+            {
+                "type": 5,
+                "name": "mineColor",
+                "value": [
+                    255,
+                    0,
+                    255,
+                    255
+                ]
+            },
+            {
+                "type": 5,
+                "name": "tntColor",
+                "value": [
+                    255,
+                    0,
+                    0,
+                    255
+                ]
+            },
+            {
+                "type": 5,
+                "name": "clickColor",
+                "value": [
+                    255,
+                    255,
+                    0,
+                    255
+                ]
+            },
+            {
+                "type": 5,
+                "name": "secretColor",
+                "value": [
+                    0,
+                    255,
+                    0,
+                    255
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Waypoints",
+        "settings": [
+            {
+                "type": 6,
+                "name": "secretWaypoints",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "boxWSecrets",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "showWText",
+                "value": true
+            },
+            {
+                "type": 5,
+                "name": "chestColor",
+                "value": [
+                    0,
+                    255,
+                    0,
+                    255
+                ]
+            },
+            {
+                "type": 5,
+                "name": "witherColor",
+                "value": [
+                    255,
+                    0,
+                    255,
+                    255
+                ]
+            },
+            {
+                "type": 5,
+                "name": "itemColor",
+                "value": [
+                    0,
+                    0,
+                    255,
+                    255
+                ]
+            },
+            {
+                "type": 5,
+                "name": "batColor",
+                "value": [
+                    0,
+                    255,
+                    0,
+                    255
+                ]
+            },
+            {
+                "type": 5,
+                "name": "redstoneColor",
+                "value": [
+                    255,
+                    0,
+                    0,
+                    255
+                ]
+            }
+        ]
+    }
+]

@@ -23,7 +23,7 @@ const defaultConf = new DefaultConfig("stellaRoutes", "data/settings.json")
     .addTextParagraph({
         category: "General",
         configName: "Info",
-        title: `&6&l&dStella Routes`,
+        title: "&6&l&dStellaRoutes",
         description: "&bMade by NEXD_",
         centered: true,
         subcategory: "",
@@ -266,7 +266,7 @@ const defaultConf = new DefaultConfig("stellaRoutes", "data/settings.json")
         value: [255, 0, 0, 255],
     });
 
-const config = new Settings("stellaRoutes", defaultConf, "data/ColorScheme.json").addMarkdown("Changelog", CHANGELOG).addMarkdown("Credits", CREDITS);
+const config = new Settings("stellaRoutes", defaultConf, "data/ColorScheme.json");
 const currentScheme = "../../stella/data/ColorScheme.json";
 
 config.setPos(config.settings.x, config.settings.y).setSize(config.settings.width, config.settings.height).setScheme(currentScheme).apply();
