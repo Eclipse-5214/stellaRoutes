@@ -11,7 +11,7 @@ import { getRoomData } from "../../roomsAPI/utils/utils";
     --------------------------------------------- */
 
 //load routes
-export let routes = JSON.parse(FileLib.read("stella", "data/dungeons/routes/routes.json"));
+export let routes = JSON.parse(FileLib.read("stellaRoutes", "data/routes/routes.json"));
 
 //pulls route data for current room from the routes.json file
 export const getRouteData = () => {
