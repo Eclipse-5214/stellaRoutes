@@ -1,5 +1,5 @@
 import { getRealCoord, getRoomWorldData, getRoomData, getRoomCoord, getCore } from "../../roomsAPI/utils/utils";
-import { calcDistance, drawLineParticles } from "../../stella/utils/utils";
+import { calcDistance, drawLineParticles } from "../utils/utils";
 import { drawBoxAtBlock, drawFilledBox, drawLine } from "../utils/renderUtils";
 import { getRouteData, routes } from "../utils/dutils";
 import { registerWhen } from "../../BloomCore/utils/Utils";
