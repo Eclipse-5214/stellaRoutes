@@ -68,6 +68,51 @@ const defaultConf = new DefaultConfig("stellaRoutes", "data/settings.json")
     })
 
     .addSwitch({
+        configName: "defaultRoutes",
+        title: "Use Default Routes",
+        description: "Always use the default routes, even if you have changed them",
+        category: "Routes",
+        subcatagory: "General",
+        value: true,
+    })
+
+    .addSwitch({
+        configName: "customRoutes",
+        title: "Use Custom Routes",
+        description: "Use custom route from files",
+        category: "Routes",
+        subcatagory: "General",
+        value: true,
+    })
+
+    .addButton({
+        category: "Routes",
+        subcategory: "General",
+        configName: "openRoutesFolder",
+        title: "Open Routes Folder",
+        description: "Opens the folder where the routes are stored",
+        placeHolder: "Open",
+
+        onClick(setting) {
+            FileLib.open("stellaRoutes", "data/routes");
+            ChatLib.chat("&6Opened Routes Folder!");
+        },
+
+        shouldShow(data) {
+            return data.customRoutes;
+        },
+    })
+
+    .addTextInput({
+        configName: "customFileName",
+        title: "Custom Routes File Name",
+        description: "The name of the custom routes file to use",
+        placeHolder: "exampleRoutes.json",
+        category: "Routes",
+        subcatagory: "General",
+    })
+
+    .addSwitch({
         configName: "boxSecrets",
         title: "Box Secrets",
         description: "Wether or not to box secrets",

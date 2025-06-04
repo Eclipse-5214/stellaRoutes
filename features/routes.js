@@ -172,20 +172,22 @@ function pushToRoute() {
 
 //saves the route to the routes file (eventually to a seperate routes file with the players name on it)
 function saveRoute(force) {
-    let routeData = Object.keys(routes);
-    let rVersion = routes.Version;
+    let routeData = routes ? Object.keys(routes) : null;
+    let rVersion = routes ? routes.Version : "1.0";
 
     if (!force) {
-        for (var i = 0; i < routeData.length; i++) {
-            if (routeData[i] === roomRID) {
-                ChatLib.chat("&cError: Route already exists!");
-                let yes = new TextComponent("&eOverride? &l&aYes").setClick("run_command", "/route route_save_force");
-                yes.chat();
-                let no = new TextComponent("&eOverride? &l&cNo").setClick("run_command", "/route stop");
-                no.chat();
-                return;
+        if (routeData) {
+            for (var i = 0; i < routeData.length; i++) {
+                if (routeData[i] === roomRID) {
+                    ChatLib.chat("&cError: Route already exists!");
+                    let yes = new TextComponent("&eOverride? &l&aYes").setClick("run_command", "/route route_save_force");
+                    yes.chat();
+                    let no = new TextComponent("&eOverride? &l&cNo").setClick("run_command", "/route stop");
+                    no.chat();
+                    return;
+                }
             }
-        }
+        ]
     }
     pushToRoute();
     routes[roomRID] = route[roomRID];
@@ -197,7 +199,7 @@ function saveRoute(force) {
         .replace(/}}],/g, "}}],\n    ")
         .replace("}}]}", "}}]\n}");
 
-    FileLib.write("stella", "data/dungeons/routes/routes.json", routesFormatted);
+    FileLib.write("stella", "data/dungeons/routes/routes-" + Player.getName + ".json", routesFormatted);
     if (force) ChatLib.chat("&aOverwritten!");
     else ChatLib.chat("&aSaved!");
     stopRecording();

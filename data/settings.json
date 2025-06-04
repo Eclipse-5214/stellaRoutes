@@ -22,7 +22,26 @@
             {
                 "type": 6,
                 "name": "modEnabled",
-                "value": false
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "defaultRoutes",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "customRoutes",
+                "value": true
+            },
+            {
+                "type": 2,
+                "name": "openRoutesFolder"
+            },
+            {
+                "type": 4,
+                "name": "customFileName",
+                "value": ""
             },
             {
                 "type": 6,
